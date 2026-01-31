@@ -7,6 +7,9 @@ const { test, expect } = require('@playwright/test');
  */
 
 const testData = [
+
+// 24 POSITIVE FUNCTIONAL TESTS
+
   { id: "Pos_Fun_0001", name: "Simple present", input: "mama paasal yanavaa" },
   { id: "Pos_Fun_0002", name: "Greeting question", input: "oyaata kohomadha?" },
   { id: "Pos_Fun_0003", name: "Imperative", input: "vahaama eeka karanna" },
@@ -32,6 +35,8 @@ const testData = [
   { id: "Pos_Fun_0023", name: "Office sentence", input: "manager ta email ekak yavanna" },
   { id: "Pos_Fun_0024", name: "Long paragraph", input: "varShaava heethuven mahanuvara dhisthrikkayee gammaana kihipayakata aethivuu gQQvathura nisaa praDhaana maarga kotas 180kata aasanna pramaaNayak haani vii aethi athara eevaayee samastha dhiga kiloomiitar 120kata aasanna bava vaarthaa vee." },
 
+// 10 NEGATIVE FUNCTIONAL TESTS
+
   { id: "Neg_Fun_0001", name: "Joined words", input: "mamaratayanavaa", negative: true },
   { id: "Neg_Fun_0002", name: "Missing vowels", input: "mama rt ynw", negative: true },
   { id: "Neg_Fun_0003", name: "Excess symbols", input: "@@@###", negative: true },
@@ -42,6 +47,8 @@ const testData = [
   { id: "Neg_Fun_0008", name: "Emoji input", input: "😊😊", negative: true },
   { id: "Neg_Fun_0009", name: "Rare abbreviation altered", input: "ETA tikak late veyi", negative: true },
   { id: "Neg_Fun_0010", name: "Heavy punctuation mix", input: "\"balamu\" (mokadda?)! tika tika", negative: true },
+
+// 1 POSITIVE UI TEST
 
   { id: "Pos_UI_0001", name: "Real-time output", input: "man gedhara yanavaa" }
 ];
@@ -66,10 +73,10 @@ test.describe('Singlish → Sinhala Transliteration (Excel-driven)', () => {
       const pageText = await page.evaluate(() => document.body.innerText);
 
       if (tc.negative) {
-        // ❌ Negative → should NOT produce Sinhala text
+        //  Negative → should NOT produce Sinhala text
         expect(pageText).not.toMatch(/[\u0D80-\u0DFF]/);
       } else {
-        // ✅ Positive / UI → must produce Sinhala text
+        //  Positive / UI → must produce Sinhala text
         expect(pageText).toMatch(/[\u0D80-\u0DFF]/);
       }
     });
