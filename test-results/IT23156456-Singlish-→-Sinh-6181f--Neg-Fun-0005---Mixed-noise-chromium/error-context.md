@@ -118,26 +118,49 @@
                 - img [ref=e126]
               - button "Redo" [ref=e128] [cursor=pointer]:
                 - img [ref=e129]
-          - textbox "Input Your Singlish Text Here." [active] [ref=e132]: mama $$$ gedhara
-          - generic [ref=e133]:
-            - button "Open File" [ref=e134] [cursor=pointer]:
-              - img [ref=e135]
-            - button "Copy" [ref=e137] [cursor=pointer]:
-              - img [ref=e138]
-            - button "Cut" [ref=e140] [cursor=pointer]:
-              - img [ref=e141]
-            - button "Paste" [ref=e143] [cursor=pointer]:
-              - img [ref=e144]
-            - button "Clear" [ref=e146] [cursor=pointer]:
-              - img [ref=e147]
-        - button "Swap Languages" [ref=e150] [cursor=pointer]:
-          - img [ref=e151]
-        - generic [ref=e153]:
-          - generic [ref=e154]: Sinhala
-          - generic [ref=e156]:
-            - button "Copy" [ref=e157] [cursor=pointer]:
-              - img [ref=e158]
-            - button "Clear" [ref=e160] [cursor=pointer]:
-              - img [ref=e161]
-      - button "Clear" [ref=e164] [cursor=pointer]: 🗑️ Clear
+          - generic [ref=e131]:
+            - textbox "Input Your Singlish Text Here." [active] [ref=e132]: mama $$$ gedhara
+            - list [ref=e134]:
+              - listitem [ref=e135] [cursor=pointer]: ගෙදර
+              - listitem [ref=e136] [cursor=pointer]: ගෙදරක
+              - listitem [ref=e137] [cursor=pointer]: ගෙදරට
+              - listitem [ref=e138] [cursor=pointer]: ගෙදරකට
+              - listitem [ref=e139] [cursor=pointer]: ගෙදරදොර
+              - listitem [ref=e140] [cursor=pointer]: ගෙදරින්
+              - listitem [ref=e141] [cursor=pointer]: ගෙදර දොර
+              - listitem [ref=e142] [cursor=pointer]: ගෙදරදොරේ
+              - listitem [ref=e143] [cursor=pointer]: ගෙදර දෙසට
+              - listitem [ref=e144] [cursor=pointer]: ගෙදර නැති
+              - listitem [ref=e145] [cursor=pointer]: ගෙදර අයෙක්
+              - listitem [ref=e146] [cursor=pointer]: ගෙදර ඇත්තී
+              - listitem [ref=e147] [cursor=pointer]: ගෙදර ඇත්තෝ
+              - listitem [ref=e148] [cursor=pointer]: ගෙදර උන්දෑ
+              - listitem [ref=e149] [cursor=pointer]: ගෙදර සිටින
+              - listitem [ref=e150] [cursor=pointer]: ගෙදර පරිසරය
+              - listitem [ref=e151] [cursor=pointer]: ගෙදර පැත්තට
+              - listitem [ref=e152] [cursor=pointer]: ගෙදර ලොක්කා
+              - listitem [ref=e153] [cursor=pointer]: ගෙදර වැසියෝ
+              - listitem [ref=e154] [cursor=pointer]: ගෙදරදොරේ වූ
+          - generic [ref=e155]:
+            - button "Open File" [ref=e156] [cursor=pointer]:
+              - img [ref=e157]
+            - button "Copy" [ref=e159] [cursor=pointer]:
+              - img [ref=e160]
+            - button "Cut" [ref=e162] [cursor=pointer]:
+              - img [ref=e163]
+            - button "Paste" [ref=e165] [cursor=pointer]:
+              - img [ref=e166]
+            - button "Clear" [ref=e168] [cursor=pointer]:
+              - img [ref=e169]
+        - button "Swap Languages" [ref=e172] [cursor=pointer]:
+          - img [ref=e173]
+        - generic [ref=e175]:
+          - generic [ref=e176]: Sinhala
+          - generic [ref=e177]: මම $$$ ගෙදර
+          - generic [ref=e178]:
+            - button "Copy" [ref=e179] [cursor=pointer]:
+              - img [ref=e180]
+            - button "Clear" [ref=e182] [cursor=pointer]:
+              - img [ref=e183]
+      - button "Clear" [ref=e186] [cursor=pointer]: 🗑️ Clear
 ```

@@ -118,26 +118,40 @@
                 - img [ref=e126]
               - button "Redo" [ref=e128] [cursor=pointer]:
                 - img [ref=e129]
-          - textbox "Input Your Singlish Text Here." [active] [ref=e132]: go paasal
-          - generic [ref=e133]:
-            - button "Open File" [ref=e134] [cursor=pointer]:
-              - img [ref=e135]
-            - button "Copy" [ref=e137] [cursor=pointer]:
-              - img [ref=e138]
-            - button "Cut" [ref=e140] [cursor=pointer]:
-              - img [ref=e141]
-            - button "Paste" [ref=e143] [cursor=pointer]:
-              - img [ref=e144]
-            - button "Clear" [ref=e146] [cursor=pointer]:
-              - img [ref=e147]
-        - button "Swap Languages" [ref=e150] [cursor=pointer]:
-          - img [ref=e151]
-        - generic [ref=e153]:
-          - generic [ref=e154]: Sinhala
-          - generic [ref=e156]:
-            - button "Copy" [ref=e157] [cursor=pointer]:
-              - img [ref=e158]
-            - button "Clear" [ref=e160] [cursor=pointer]:
-              - img [ref=e161]
-      - button "Clear" [ref=e164] [cursor=pointer]: 🗑️ Clear
+          - generic [ref=e131]:
+            - textbox "Input Your Singlish Text Here." [active] [ref=e132]: go paasal
+            - list [ref=e134]:
+              - listitem [ref=e135] [cursor=pointer]: පාෂල්
+              - listitem [ref=e136] [cursor=pointer]: පාසල්
+              - listitem [ref=e137] [cursor=pointer]: පාසල් බෑගය
+              - listitem [ref=e138] [cursor=pointer]: පාසල් ළමයා
+              - listitem [ref=e139] [cursor=pointer]: පාසල් සපත්තු
+              - listitem [ref=e140] [cursor=pointer]: පාසල් නාට්‍යය
+              - listitem [ref=e141] [cursor=pointer]: පාෂල් මිනුම් පීල්ල
+              - listitem [ref=e142] [cursor=pointer]: පාසල් ක්‍රීඩා උළෙල
+              - listitem [ref=e143] [cursor=pointer]: පාසළ්
+              - listitem [ref=e144] [cursor=pointer]: ඵාසල්
+              - listitem [ref=e145] [cursor=pointer]: ඵාසළ්
+          - generic [ref=e146]:
+            - button "Open File" [ref=e147] [cursor=pointer]:
+              - img [ref=e148]
+            - button "Copy" [ref=e150] [cursor=pointer]:
+              - img [ref=e151]
+            - button "Cut" [ref=e153] [cursor=pointer]:
+              - img [ref=e154]
+            - button "Paste" [ref=e156] [cursor=pointer]:
+              - img [ref=e157]
+            - button "Clear" [ref=e159] [cursor=pointer]:
+              - img [ref=e160]
+        - button "Swap Languages" [ref=e163] [cursor=pointer]:
+          - img [ref=e164]
+        - generic [ref=e166]:
+          - generic [ref=e167]: Sinhala
+          - generic [ref=e168]: go පාසල්
+          - generic [ref=e169]:
+            - button "Copy" [ref=e170] [cursor=pointer]:
+              - img [ref=e171]
+            - button "Clear" [ref=e173] [cursor=pointer]:
+              - img [ref=e174]
+      - button "Clear" [ref=e177] [cursor=pointer]: 🗑️ Clear
 ```
