@@ -6,13 +6,13 @@ University assignment Playwright automation for **Swift Translator** (`https://w
 ### Project structure
 
 ```
-playwright/
-├── playwright.config.ts
-├── tsconfig.json
+Playwright_Project/
+├── playwright.config.js
 ├── package.json
-└── tests/
-    ├── IT23156456-main.spec.ts   # Main automated test suite (35 cases)
-    └── IT23156456.xlsx           # Original test case sheet (source)
+├── test/
+│   └── IT23156456.spec.js       # Main automated test suite (35 cases)
+├── playwright-report/           # Generated HTML reports
+└── test-results/                # Test result artifacts
 ```
 
 ### Prerequisites
@@ -31,8 +31,11 @@ npx playwright install
 # Run all tests
 npm test
 
+#or
+npm run test:report
+
 # Run only the assignment test suite
-npx playwright test tests/IT23156456-main.spec.ts
+npx playwright test test/IT23156456.spec.js
 
 # Headed mode (see the browser)
 npm run test:headed
@@ -49,5 +52,5 @@ After a run:
 
 ### Notes
 
-- The assertions in `tests/IT23184480-main.spec.ts` use **flexible matching** (Sinhala-word based) because the site can output small spelling/format variations.
-- If you need to update test cases, edit the `testCases` array inside `tests/IT23184480-main.spec.ts` and keep `tests/IT23184480.xlsx` as the reference sheet.
+- The assertions in `test/IT23156456.spec.js` use exact matching for Sinhala transliteration output.
+- If you need to update test cases, edit the `testData` array inside `test/IT23156456.spec.js`.
